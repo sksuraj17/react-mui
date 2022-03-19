@@ -38,14 +38,14 @@ export const MuiButton = () => {
         <Button variant='outlined' color='success'>Success</Button>
     </Stack>
     <Stack display='block' spacing={2} direction='row'>
-        <Button variant='contained' color='primary' size='small'>Small Button</Button>
+        <Button variant='contained' color='primary' size='small' onClick={() => alert('Clicked Small Button')}>Small Button</Button>
         <Button variant='contained' color='secondary' size='medium'>Medium Button</Button>
         <Button variant='contained' color='error' size='large'>Large Button</Button>
     </Stack>
     <Stack display='block' spacing={2} direction='row'>
-        <Button variant='contained' color='primary'  startIcon={<SendIcon />}>Send</Button>
-        <Button variant='contained' color='secondary' endIcon={<SendIcon />}>Send</Button>
-        <IconButton>
+        <Button variant='contained' color='primary'  startIcon={<SendIcon />} disableElevation >Send</Button>
+        <Button variant='contained' color='secondary' endIcon={<SendIcon />} disableRipple>Send</Button>
+        <IconButton aria-label='CoPresent' color='info' size='small'>
             <CoPresentIcon />
         </IconButton>
     </Stack>
