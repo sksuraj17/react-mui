@@ -1,6 +1,7 @@
-import { Button } from "@mui/material"
+import { Button, IconButton } from "@mui/material"
 import { Stack } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send';
+import CoPresentIcon from '@mui/icons-material/CoPresent';
 
 export const MuiButton = () => {
   return (
@@ -42,9 +43,11 @@ export const MuiButton = () => {
         <Button variant='contained' color='error' size='large'>Large Button</Button>
     </Stack>
     <Stack display='block' spacing={2} direction='row'>
-        <Button variant='contained' color='primary' size='small' startIcon={<SendIcon />}>Send</Button>
-        <Button variant='contained' color='secondary' size='medium' endIcon={<SendIcon />}>Send</Button>
-        <Button variant='contained' color='error' size='large'>Large Button</Button>
+        <Button variant='contained' color='primary'  startIcon={<SendIcon />}>Send</Button>
+        <Button variant='contained' color='secondary' endIcon={<SendIcon />}>Send</Button>
+        <IconButton>
+            <CoPresentIcon />
+        </IconButton>
     </Stack>
     </Stack>
   )
